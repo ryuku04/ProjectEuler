@@ -1,7 +1,0 @@
-git status
-
-git add problem.py
-
-git commit -a
-
-git push git@github.com:ryuku04/ProjectEular.git
