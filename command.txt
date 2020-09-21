@@ -1,7 +1,7 @@
 git status
 
-git add problem.py
+git add .
 
-git commit -a
+git commit -a -m "commit."
 
 git push git@github.com:ryuku04/ProjectEular.git
