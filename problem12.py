@@ -21,20 +21,19 @@ import math
 
 if __name__ == '__main__':
 
-    divisor = []
+    num = 500
     count = 0
     triangle_num = 0
-    num = 500
+    factor_num = 0
 
-    while len(divisor) < num:
-        divisor.clear()
+    while factor_num < num:
         count = count + 1
         triangle_num = triangle_num + count
 
-        for i in range(1, math.floor(triangle_num)):
+        factor_num = 0
+        for i in range(1, triangle_num):
             if triangle_num % i == 0:
-                divisor.append(i)
-
-    print(num)
-    print(divisor)
-    print(sum(divisor))
+                factor_num = factor_num + 1
+    
+    print(count)
+    print(factor_num)
