@@ -28,10 +28,10 @@ if __name__ == '__main__':
 
     while factor_num < num:
         count = count + 1
-        triangle_num = triangle_num + count
+        triangle_num = (count+1)*count/2
 
         factor_num = 0
-        for i in range(1, triangle_num):
+        for i in range(2, int(math.floor(math.sqrt(triangle_num))) + 1):
             if triangle_num % i == 0:
                 factor_num = factor_num + 1
     
