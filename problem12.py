@@ -31,7 +31,9 @@ if __name__ == '__main__':
         triangle_num = (count+1)*count/2
 
         factor_num = 0
-        for i in range(2, int(math.floor(math.sqrt(triangle_num))) + 1):
+        if triangle_num % 2 == 0:
+            factor_num = factor_num + 1
+        for i in range(3, int(math.floor(math.sqrt(triangle_num)))+1,2):
             if triangle_num % i == 0:
                 factor_num = factor_num + 1
     
